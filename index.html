@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/buttons.css" />
+    <link rel="stylesheet" href="./styles/inputs.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <title>TechPosters - Home</title>
+  </head>
+  <body class="container">
+    <header class="navbar">
+      <!-- nav menu -->
+      <nav class="navbar-items">
+        <h3 class="logo">TechPosters</h3>
+        <a class="navbar-link" href="#">Sair</a>
+      </nav>
+    </header>
+    <!-- main receives form -->
+    <main class="main display-center">
+      <section class="div-form-post display-column">
+        <div class="user-post display-center">
+          <img class="image-post" src="/assets/img/richardUser.png" alt="">
+          <div>
+            <h4>Richard Jácomo</h4>
+            <p>Front End developer</p>
+          </div>
+          </div>
+          <form class="display-column" action="">
+            <input class="input-post" type="text" name="title" placeholder="Digitar título do post" required>
+            <textarea class="text-post" name="text-content" id="" cols="30" rows="10" placeholder="Digitar descrição do post" required></textarea>
+            <button class="button-post" type="submit">Postar</button>
+          </form>
+      </section>
+      <aside class="suggestion-list"> 
+        <ul class="suggestion-users">
+          <h3 class="title-suggestion">Sugestões para você seguir</h3>
+          <!-- suggestion list -->
+        </ul>
+      </aside>
+    </main>
+    <section class="feed">
+      <!-- posts -->
+      <h1>Posts</h1>
+      <ul class="feed-ul">
+     <!-- posts feed content -->
+      </ul>
+    </section>
+    <!-- modal -->
+    <section class="modal-wrapper" id="modal-post">
+        <div class="modal">
+            <div class="modal-header">
+              <div class="user-father display-center">
+                <!-- /assets/img/richardUser.png -->
+                <img class="img-profile image-post" src="" alt="">
+                <div class="name-user-modal display-column">
+                  <!-- name -->
+                <h3 class="user-name-modal"></h3>
+                <!-- profession -->
+                <p class="user-text-modal"></p>  
+                </div>
+              </div>
+                <button class="modal-close" data-control-modal="modal-post">X</button>
+            </div>
+            <div class="modal-body">
+               <div>
+                <!-- title post -->
+                <h2 class="title-post-modal"></h2>
+                <!-- content post -->
+                <p class="content-post-modal"></p>
+               </div>
+            </div>
+    </div>
+    </section>
+    <script src="./script/database/users.js"></script>
+    <script src="./script/database/posts.js"></script>
+    <script src="./script/database/sugestUsers.js"></script>
+    <script src="./script/database/index.js"></script>
+  </body>
+</html>
+
